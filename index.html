@@ -644,19 +644,25 @@
             </div> -->
           <!-- </div>
         </div> -->
-          <div x-show="activeTab === 'keynote'" x-transition:enter="transition ease-out duration-300"
-            x-transition:enter-start="opacity-0 transform scale-95"
-            x-transition:enter-end="opacity-100 transform scale-100">
-            <div class="flex flex-col items-center justify-center min-h-[180px] py-8">
-              <svg class="w-14 h-14 mb-4 text-[#8e44ad] opacity-60" fill="none" viewBox="0 0 48 48"
-                stroke="currentColor">
-                <circle cx="24" cy="24" r="22" stroke-width="3" class="text-[#e74c3c]" fill="none" />
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M16 24h16M24 16v16" />
-              </svg>
-              <span class="text-2xl text-gray-200 font-semibold italic tracking-wide">To be updated soon</span>
-              <span class="text-gray-400 mt-2 text-base">Check back for speaker announcements.</span>
-            </div>
-          </div>
+         <div 
+  x-show="activeTab === 'keynote'" 
+  x-transition:enter="transition ease-out duration-300"
+  x-transition:enter-start="opacity-0 transform scale-95"
+  x-transition:enter-end="opacity-100 transform scale-100"
+>
+  <div class="flex flex-col items-center justify-center min-h-[180px] py-8">
+    <div class="flex flex-wrap justify-center gap-8 w-full max-w-7xl mx-auto">
+      <!-- CARD 1 -->
+      <div class="bg-[#1f1f1f] rounded-xl text-center p-6 w-full max-w-xs">
+        <img src="images/DrSudhaM.jpeg" alt="Profile" class="w-40 h-40 rounded-full object-top mx-auto border-4 border-white object-cover mb-6">
+        <p class="text-white font-semibold text-xl">Dr. Sudha Mokkapati</p>
+        <p class="text-gray-400 text-base mt-1">Monash University, Australia</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
           <!-- Panel Moderators Section -->
           <!-- <div x-show="activeTab === 'panel'" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-95" x-transition:enter-end="opacity-100 transform scale-100">
@@ -732,7 +738,7 @@
               </div>
 
               <!-- Row 2 with 3 Cards -->
-              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 w-full max-w-5xl justify-center">
+              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 w-full max-w-7xl justify-center">
                 <!-- CARD 5 -->
                 <div class="bg-[#1f1f1f] rounded-xl text-center p-6 w-full">
                   <img src="images/DrJasleen.gif" alt="Profile" class="w-40 h-40 object-top rounded-full mx-auto border-4 border-white object-cover mb-6" style="object-position: center -8px;">
@@ -743,8 +749,8 @@
                 <!-- CARD 6 -->
                 <div class="bg-[#1f1f1f] rounded-xl text-center p-6 w-full">
                   <img src="images/DrGarima.png" alt="Profile" class="w-40 h-40 rounded-full mx-auto border-4 border-white object-cover mb-6">
-                  <p class="text-white font-semibold text-xl">Dr. Garima Aggarwal</p>
-                  <p class="text-gray-400 text-base mt-1">ReNew Private Limited, New Delhi</p>
+                  <p class="text-white font-semibold text-xl text-nowrap">Dr. Garima Aggarwal</p>
+                  <p class="text-gray-400 text-base mt-1 text-nowrap">ReNew Private Limited, New Delhi</p>
                 </div>
 
                 <!-- CARD 7 -->
@@ -752,10 +758,20 @@
                   <img src="images/DrManisha.jpg" alt="Profile" class="w-40 h-40 object-top rounded-full mx-auto border-4 border-white object-cover mb-6">
                   <p class="text-white font-semibold text-xl">Dr. Manisha Bharti</p>
                   <p class="text-gray-400 text-base mt-1">NIT Delhi</p>
+
+                </div>
+                 <!-- CARD 8 -->
+                <div class="bg-[#1f1f1f] rounded-xl text-center p-6 w-full">
+                  <img src="images/DrNehaKhatri.jpeg" alt="Profile" class="w-40 h-40 object-top rounded-full mx-auto border-4 border-white object-cover mb-6">
+                  <p class="text-white font-semibold text-xl">Dr. Neha Khatri</p>
+                  <p class="text-gray-400 text-base mt-1">CSIO Chandigarh</p>
+                  
                 </div>
               </div>
             </div>
           </div>
+
+          
 
           <!-- Workshop Leaders Section -->
           <!-- <div x-show="activeTab === 'workshop'" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-95" x-transition:enter-end="opacity-100 transform scale-100">
@@ -794,19 +810,35 @@
           <!-- </div>
           </div>
         </div> -->
-          <div x-show="activeTab === 'workshop'" x-transition:enter="transition ease-out duration-300"
-            x-transition:enter-start="opacity-0 transform scale-95"
-            x-transition:enter-end="opacity-100 transform scale-100">
-            <div class="flex flex-col items-center justify-center min-h-[180px] py-8">
-              <svg class="w-14 h-14 mb-4 text-[#e74c3c] opacity-60" fill="none" viewBox="0 0 48 48"
-                stroke="currentColor">
-                <circle cx="24" cy="24" r="22" stroke-width="3" class="text-[#3498db]" fill="none" />
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M24 16v16" />
-              </svg>
-              <span class="text-2xl text-gray-200 font-semibold italic tracking-wide">To be updated soon</span>
-              <span class="text-gray-400 mt-2 text-base">Workshop leaders will be revealed soon.</span>
-            </div>
-          </div>
+          <div 
+  x-show="activeTab === 'workshop'" 
+  x-transition:enter="transition ease-out duration-300"
+  x-transition:enter-start="opacity-0 transform scale-95"
+  x-transition:enter-end="opacity-100 transform scale-100"
+>
+  <div class="flex flex-col items-center justify-center min-h-[180px] py-8">
+    
+    <!-- Flex container for cards -->
+    <div class="flex flex-wrap justify-center gap-8 w-full max-w-7xl px-4">
+      
+      <!-- CARD 1 -->
+      <div class="bg-[#1f1f1f] rounded-xl text-center p-6 w-full max-w-xs">
+        <img src="images/DrAparnaAkula.jpeg" alt="Profile" class="w-40 h-40 rounded-full object-top mx-auto border-4 border-white object-cover mb-6">
+        <p class="text-white font-semibold text-xl">Dr. Aparna Akula</p>
+        <p class="text-gray-400 text-base mt-1">CSIO Chandigarh</p>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="bg-[#1f1f1f] rounded-xl text-center p-6 w-full max-w-xs">
+        <img src="images/DrRadhikaTrikha.jpeg" alt="Profile" class="w-40 h-40 rounded-full mx-auto border-4 border-white object-cover mb-6">
+        <p class="text-white font-semibold text-xl">Dr. Radhika Trikha</p>
+        <p class="text-gray-400 text-base mt-1">IIT Ropar</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
           <!-- See all speakers button -->
           <!-- <div class="text-center mt-12">
             <button
