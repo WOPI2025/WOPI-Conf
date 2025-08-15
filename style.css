@@ -41,6 +41,12 @@ html, body {
     padding: 5rem 0; /* equivalent to py-20 */
     text-align: center;
   }
+  .glass-card {
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px); /* For Safari support */
+      background-color: rgba(64 ,64 ,64,0.5); /* Semi-transparent background */
+      border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle white border */
+  }
   
   /* Card Stat */
   .card-stat {
