@@ -578,7 +578,7 @@
             <button @click="activeTab = 'panel'"
               :class="{ 'bg-[#8e44ad] border-[#8e44ad]': activeTab === 'panel', 'bg-transparent border-gray-600 hover:border-gray-400': activeTab !== 'panel' }"
               class="px-6 py-2 rounded-full border-2 transition-colors duration-300 m-2 focus:outline-none">
-              Technical Experts
+              Technical Experts / Session Chairs
             </button>
             <button @click="activeTab = 'workshop'"
               :class="{ 'bg-[#8e44ad] border-[#8e44ad]': activeTab === 'workshop', 'bg-transparent border-gray-600 hover:border-gray-400': activeTab !== 'workshop' }"
@@ -718,83 +718,105 @@
           <div x-show="activeTab === 'panel'" x-transition:enter="transition ease-out duration-300"
             x-transition:enter-start="opacity-0 transform scale-95"
             x-transition:enter-end="opacity-100 transform scale-100">
-            <div class="flex flex-col items-center justify-center gap-10 p-8 md:-mt-10">
-              <!-- Row 1 with 4 Cards -->
-              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 w-full max-w-7xl">
+            <div class="flex flex-col items-center justify-center min-h-[180px] py-8">
+              <!-- Flex container for cards -->
+              <div class="flex flex-wrap justify-center gap-8 w-full max-w-7xl px-4 md:-mt-10">
                 <!-- CARD 1 -->
-                <div class="bg-[#1f1f1f] rounded-xl text-center p-6 w-full">
+                <div class="bg-[#1f1f1f] rounded-xl text-center p-6 w-full max-w-xs">
                   <img src="images/DrSwati.jpg" alt="Profile" class="w-40 h-40 rounded-full object-top mx-auto border-4 border-white object-cover mb-6">
                   <p class="text-white font-semibold text-xl">Dr. Swati Rajput</p>
                   <p class="text-gray-400 text-base mt-1">IIT Dhanbad</p>
                 </div>
 
                 <!-- CARD 2 -->
-                <div class="bg-[#1f1f1f] rounded-xl text-center p-6 w-full">
+                <div class="bg-[#1f1f1f] rounded-xl text-center p-6 w-full max-w-xs">
                   <img src="images/DrJyotirmayee.jpg" alt="Profile" class="w-40 h-40 rounded-full mx-auto border-4 border-white object-cover mb-6">
                   <p class="text-white font-semibold text-xl">Dr. Jyotirmayee Dash</p>
                   <p class="text-gray-400 text-base mt-1">TeraLumen Solutions, Chennai</p>
                 </div>
 
                 <!-- CARD 3 -->
-                <div class="bg-[#1f1f1f] rounded-xl text-center p-6 w-full">
+                <div class="bg-[#1f1f1f] rounded-xl text-center p-6 w-full max-w-xs">
                   <img src="images/DrGouri.jpeg" alt="Profile" class="w-40 h-40 rounded-full mx-auto border-4 border-white object-cover mb-6">
                   <p class="text-white font-semibold text-xl">Dr. Gowri.A</p>
                   <p class="text-gray-400 text-base mt-1">IIITDM, Kancheepuram</p>
                 </div>
 
                 <!-- CARD 4 -->
-                <div class="bg-[#1f1f1f] rounded-xl text-center p-6 w-full">
+                <div class="bg-[#1f1f1f] rounded-xl text-center p-6 w-full max-w-xs">
                   <img src="images/DrJoyee.jpg" alt="Profile" class="w-40 h-40 object-top rounded-full mx-auto border-4 border-white object-cover mb-6">
                   <p class="text-white font-semibold text-xl">Dr. Joyee Ghosh</p>
                   <p class="text-gray-400 text-base mt-1">IIT Delhi</p>
                 </div>
+
+             
+              <!-- CARD 5 -->
+              <div class="bg-[#1f1f1f] rounded-xl text-center p-6 w-full max-w-xs">
+                <img src="images/DrJasleen.gif" alt="Profile" class="w-40 h-40 object-top rounded-full mx-auto border-4 border-white object-cover mb-6" style="object-position: center -8px;">
+                <p class="text-white font-semibold text-xl">Dr. Jasleen Lugani</p>
+                <p class="text-gray-400 text-base mt-1">IIT Delhi</p>
               </div>
 
-              <!-- Row 2 with 4 Cards -->
-<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 w-full max-w-7xl">
-  <!-- CARD 5 -->
-  <div class="bg-[#1f1f1f] rounded-xl text-center p-6 w-full">
-    <img src="images/DrJasleen.gif" alt="Profile" class="w-40 h-40 object-top rounded-full mx-auto border-4 border-white object-cover mb-6" style="object-position: center -8px;">
-    <p class="text-white font-semibold text-xl">Dr. Jasleen Lugani</p>
-    <p class="text-gray-400 text-base mt-1">IIT Delhi</p>
-  </div>
-
-  <!-- CARD 6 -->
-  <div class="bg-[#1f1f1f] rounded-xl text-center p-6 w-full">
-    <img src="images/DrGarima.png" alt="Profile" class="w-40 h-40 rounded-full mx-auto border-4 border-white object-cover mb-6">
-    <p class="text-white font-semibold text-xl text-nowrap">Dr. Garima Aggarwal</p>
-    <p class="text-gray-400 text-base mt-1 text-nowrap">ReNew Private Limited, New Delhi</p>
-  </div>
-
-  <!-- CARD 7 -->
-  <div class="bg-[#1f1f1f] rounded-xl text-center p-6 w-full">
-    <img src="images/DrManisha.jpg" alt="Profile" class="w-40 h-40 object-top rounded-full mx-auto border-4 border-white object-cover mb-6">
-    <p class="text-white font-semibold text-xl">Dr. Manisha Bharti</p>
-    <p class="text-gray-400 text-base mt-1">NIT Delhi</p>
-  </div>
-
-  <!-- CARD 8 -->
-  <div class="bg-[#1f1f1f] rounded-xl text-center p-6 w-full">
-    <img src="images/DrNehaKhatri.jpeg" alt="Profile" class="w-40 h-40 object-top rounded-full mx-auto border-4 border-white object-cover mb-6">
-    <p class="text-white font-semibold text-xl">Dr. Neha Khatri</p>
-    <p class="text-gray-400 text-base mt-1">CSIO Chandigarh</p>
-  </div>
-</div>
-
-<!-- Row 3 with LAST 2 (centered) -->
-<div class="flex justify-center gap-8 mt-8 w-full max-w-7xl">
-  <div class="bg-[#1f1f1f] rounded-xl text-center p-6 w-72">
-    <img src="images/DrArti1.png" alt="Profile" class="w-40 h-40 object-top rounded-full mx-auto border-4 border-white object-cover mb-6">
-    <p class="text-white font-semibold text-xl">Dr. Arti Sarkar</p>
-    <p class="text-gray-400 text-base mt-1">ISRO Ahmedabad</p>
-  </div>
-
-  <div class="bg-[#1f1f1f] rounded-xl text-center p-6 w-72">
-    <img src="images/DrRiaPaul2.png" alt="Profile" class="w-40 h-40 object-top rounded-full mx-auto border-4 border-white object-cover mb-6">
-    <p class="text-white font-semibold text-xl">Dr. Ria Paul</p>
-    <p class="text-gray-400 text-base mt-1">Syncthreads computing solutions, Pune</p>
-  </div>
-</div>
+              <!-- CARD 6 -->
+              <div class="bg-[#1f1f1f] rounded-xl text-center p-6 w-full max-w-xs">
+                <img src="images/DrGarima.png" alt="Profile" class="w-40 h-40 rounded-full mx-auto border-4 border-white object-cover mb-6">
+                <p class="text-white font-semibold text-xl text-nowrap">Dr. Garima Aggarwal</p>
+                <p class="text-gray-400 text-base mt-1 text-nowrap">ReNew Private Limited, New Delhi</p>
+              </div>
+              <!-- CARD 7 -->
+              <div class="bg-[#1f1f1f] rounded-xl text-center p-6 w-full max-w-xs">
+                <img src="images/DrManisha.jpg" alt="Profile" class="w-40 h-40 object-top rounded-full mx-auto border-4 border-white object-cover mb-6">
+                <p class="text-white font-semibold text-xl">Dr. Manisha Bharti</p>
+                <p class="text-gray-400 text-base mt-1">NIT Delhi</p>
+              </div>
+              <!-- CARD 8 -->
+              <div class="bg-[#1f1f1f] rounded-xl text-center p-6 w-full max-w-xs">
+                <img src="images/DrNehaKhatri.jpeg" alt="Profile" class="w-40 h-40 object-top rounded-full mx-auto border-4 border-white object-cover mb-6">
+                <p class="text-white font-semibold text-xl">Dr. Neha Khatri</p>
+                <p class="text-gray-400 text-base mt-1">CSIO Chandigarh</p>
+              </div>
+              <!-- CARD 9 -->
+              <div class="bg-[#1f1f1f] rounded-xl text-center p-6 w-full max-w-xs">
+                <img src="images/DrArti1.png" alt="Profile" class="w-40 h-40 object-top rounded-full mx-auto border-4 border-white object-cover mb-6">
+                <p class="text-white font-semibold text-xl">Dr. Arti Sarkar</p>
+                <p class="text-gray-400 text-base mt-1">ISRO Ahmedabad</p>
+              </div>
+              <!-- CARD 10 -->
+              <div class="bg-[#1f1f1f] rounded-xl text-center p-6 w-full max-w-xs">
+                <img src="images/DrRiaPaul2.png" alt="Profile" class="w-40 h-40 object-top rounded-full mx-auto border-4 border-white object-cover mb-6">
+                <p class="text-white font-semibold text-xl">Dr. Ria Paul</p>
+                <p class="text-gray-400 text-base mt-1">Syncthreads Computing Solutions, Pune</p>
+              </div>
+              <!-- CARD 11 -->
+              <div class="bg-[#1f1f1f] rounded-xl text-center p-6 w-full max-w-xs">
+                <img src="images/drpreetika3.jpg" alt="Profile" class="w-40 h-40 object-top rounded-full mx-auto border-4 border-white object-fill mb-6">
+                <p class="text-white font-semibold text-xl">Preetika Sharma</p>
+                <p class="text-gray-400 text-base mt-1">UIET, PU</p>
+              </div>
+              <!-- CARD 12 -->
+              <div class="bg-[#1f1f1f] rounded-xl text-center p-6 w-full max-w-xs">
+                <img src="images/divyaagg.jpg" alt="Profile" class="w-40 h-40 object-top rounded-full mx-auto border-4 border-white object-cover mb-6">
+                <p class="text-white font-semibold text-xl">Divya Agrawal</p>
+                <p class="text-gray-400 text-base mt-1">CSIO, Chandigarh</p>
+              </div>
+              <!-- CARD 13 -->
+              <div class="bg-[#1f1f1f] rounded-xl text-center p-6 w-full max-w-xs">
+                <img src="images/DharitriRath.png" alt="Profile" class="w-40 h-40 object-top rounded-full mx-auto border-4 border-white object-cover mb-6">
+                <p class="text-white font-semibold text-xl">Dharitri Rath</p>
+                <p class="text-gray-400 text-base mt-1">IIT Jammu</p>
+              </div>
+              <!-- CARD 14 -->
+              <div class="bg-[#1f1f1f] rounded-xl text-center p-6 w-full max-w-xs">
+                <img src="images/shilpajindal2.png" alt="Profile" class="w-40 h-40 object-top rounded-full mx-auto border-4 border-white object-cover mb-6" style="object-position: center -2px;">
+                <p class="text-white font-semibold text-xl">Shilpa Jindal</p>
+                <p class="text-gray-400 text-base mt-1">CCET, PU</p>
+              </div>
+              <!-- CARD 15 -->
+              <div class="bg-[#1f1f1f] rounded-xl text-center p-6 w-full max-w-xs">
+                <img src="images/sumansingh.jpg" alt="Profile" class="w-40 h-40 object-top rounded-full mx-auto border-4 border-white object-cover mb-6">
+                <p class="text-white font-semibold text-xl">Suman Singh</p>
+                <p class="text-gray-400 text-base mt-1">CSIO, Chandigarh</p>
+              </div>
 
               </div>
             </div>
@@ -848,7 +870,7 @@
   <div class="flex flex-col items-center justify-center min-h-[180px] py-8">
     
     <!-- Flex container for cards -->
-    <div class="flex flex-wrap justify-center gap-8 w-full max-w-7xl px-4">
+    <div class="flex flex-wrap justify-center gap-8 w-full max-w-7xl px-4 md:-mt-10">
       
       <!-- CARD 1 -->
       <div class="bg-[#1f1f1f] rounded-xl text-center p-6 w-full max-w-xs">
@@ -907,17 +929,37 @@
       </div>
       <!-- CARD 10 -->
       <div class="bg-[#1f1f1f] rounded-xl text-center p-6 w-full max-w-xs">
-        <img src="images/DrPooja.png" alt="Profile" class="w-40 h-40 rounded-full mx-auto border-4 border-white object-cover mb-6">
+        <img src="images/DrPooja.png" alt="Profile" class="w-40 h-40 rounded-full mx-auto border-4 border-white object-cover mb-6" >
         <p class="text-white font-semibold text-xl">Dr. Pooja Devi</p>
         <p class="text-gray-400 text-base mt-1">CSIO, Chandigarh </p>
       </div>
       <!-- CARD 11 -->
       <div class="bg-[#1f1f1f] rounded-xl text-center p-6 w-full max-w-xs">
-        <img src="images/DrDeepti.png" alt="Profile" class="w-40 h-40 rounded-full mx-auto border-4 border-white object-cover mb-6">
+        <img src="images/DrDeepti.png" alt="Profile" class="w-40 h-40 rounded-full mx-auto border-4 border-white object-cover mb-6" style="object-position: center -2px;">
         <p class="text-white font-semibold text-xl">Dr. Deepti Shashikumar</p>
         <p class="text-gray-400 text-base mt-1">Edmund Optics </p>
       </div>
+      <!-- CARD 12 -->
+      <div class="bg-[#1f1f1f] rounded-xl text-center p-6 w-full max-w-xs">
+        <img src="images/manavjeetkaur.jpeg" alt="Profile" class="w-40 h-40 rounded-full mx-auto border-4 border-white object-cover mb-6">
+        <p class="text-white font-semibold text-xl">Manavjeet Kaur</p>
+        <p class="text-gray-400 text-base mt-1">Accelor Microsystems, Mohali </p>
+      </div>
+      <!-- CARD 13 -->
+      <div class="bg-[#1f1f1f] rounded-xl text-center p-6 w-full max-w-xs">
+        <img src="images/mrmukhvinder.jpeg" alt="Profile" class="w-40 h-40 rounded-full mx-auto border-4 border-white object-cover mb-6">
+        <p class="text-white font-semibold text-xl">Mr. Mukhwinder Singh</p>
+        <p class="text-gray-400 text-base mt-1">Accelor Microsystems, Mohali </p>
+      </div>
+      <!-- CARD 14 -->
+      <div class="bg-[#1f1f1f] rounded-xl text-center p-6 w-full max-w-xs">
+        <img src="images/tamannasood.jpeg" alt="Profile" class="w-40 h-40 rounded-full mx-auto border-4 border-white object-cover mb-6">
+        <p class="text-white font-semibold text-xl">Tamanna Sood </p>
+        <p class="text-gray-400 text-base mt-1">Roundglass Living </p>
+      </div>
+
     </div>
+    
     <span class="text-2xl text-gray-200 font-semibold italic tracking-wide py-10 md:-mb-20">To be updated further soon....</span>
   </div>
 </div>
