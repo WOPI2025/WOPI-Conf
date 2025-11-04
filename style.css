@@ -492,3 +492,86 @@ html, body {
   }
 
 
+
+.card1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 30px;
+}
+
+.photoplace{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 50%;
+    background-image: url(https://digipol.org/images/speakers_images/ranjana_nalamalli_director_drdo.png) ;
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #ffc72c;
+}
+.photoplace2{
+    width: 180px;
+    height: 180px;
+    background-color: white;
+    border-radius: 50%;
+    background-image: url(https://media.licdn.com/dms/image/v2/C4D03AQFMcBB6_7F2oA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1517596907028?e=2147483647&v=beta&t=s3Ti7bEUAxWjnxUiGPiJcI9l4PsX5PfB-qjl2Brbi1Y) ;
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #ffc72c;
+}
+
+
+.chiefGuest{
+    color: #ffc72c;
+    font-size: 50px;
+    font-weight: 700;
+    
+}
+
+.name{
+    margin-top: 2px;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 9px;
+}
+
+.rule{
+    border: none;
+    height: 3px;
+    background-color: white;
+
+}
+
+.designation{
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 9px;
+}
+.chiefGuest1{
+    color: #ffc72c;
+    font-size: 45px;
+    font-weight: 700;
+    
+}
+
+.name1{
+    margin-top: 2px;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 9px;
+}
+
+.rule1{
+    border: none;
+    height: 3px;
+    background-color: white;
+
+}
+
+.designation1{
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 9px;
+}
