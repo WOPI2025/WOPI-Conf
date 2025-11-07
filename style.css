@@ -499,29 +499,21 @@ html, body {
     justify-content: center;
     gap: 70px;
     margin-top: 30px;
+    /* border: 2px solid white; */
+    /* padding: 5px; */
 }
 
 .photoplace{
-    width: 200px;
-    height: 200px;
-    background-color: white;
-    border-radius: 50%;
-    background-image: url(https://digipol.org/images/speakers_images/ranjana_nalamalli_director_drdo.png) ;
-    background-size: cover;
-    background-position: center;
-    border: 3px solid #ffc72c;
+    width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  background-image: url('https://digipol.org/images/speakers_images/ranjana_nalamalli_director_drdo.png');
+  background-size: cover;
+  background-position: center;
+  border: 4px solid #ffc72c;
+  box-shadow: 0 0 30px rgba(255, 199, 44, 0.3);
+  flex-shrink: 0;
 }
-.photoplace2{
-    width: 180px;
-    height: 180px;
-    background-color: white;
-    border-radius: 50%;
-    background-image: url(https://media.licdn.com/dms/image/v2/C4D03AQFMcBB6_7F2oA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1517596907028?e=2147483647&v=beta&t=s3Ti7bEUAxWjnxUiGPiJcI9l4PsX5PfB-qjl2Brbi1Y) ;
-    background-size: cover;
-    background-position: center;
-    border: 3px solid #ffc72c;
-}
-
 
 .chiefGuest{
     color: #ffc72c;
@@ -533,7 +525,7 @@ html, body {
 .name{
     margin-top: 2px;
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 9px;
 }
 
@@ -546,32 +538,8 @@ html, body {
 
 .designation{
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 400;
     margin-top: 9px;
 }
-.chiefGuest1{
-    color: #ffc72c;
-    font-size: 45px;
-    font-weight: 700;
-    
-}
 
-.name1{
-    margin-top: 2px;
-    font-size: 30px;
-    font-weight: 600;
-    margin-bottom: 9px;
-}
 
-.rule1{
-    border: none;
-    height: 3px;
-    background-color: white;
-
-}
-
-.designation1{
-    font-size: 15px;
-    font-weight: 500;
-    margin-top: 9px;
-}
